@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:15-alpine
+    container_name: aitutor_beta_postgres
+    restart: always
+    environment:
+      POSTGRES_USER: aitutor_user
+      POSTGRES_PASSWORD: aitutor_secure_pass
+      POSTGRES_DB: aitutor_beta_state
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_beta_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_beta_data:

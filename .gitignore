@@ -1,0 +1,19 @@
+# Environments & Virt Env
+.venv/
+env/
+venv/
+ENV/
+
+# Python execution caches
+**/__pycache__/
+*.py[cod]
+
+# Hidden settings
+*.env
+*.env.local
+
+# Database local binary directories
+/postgres_beta_data/
+.idea/
+.vscode/
+.DS_Store
