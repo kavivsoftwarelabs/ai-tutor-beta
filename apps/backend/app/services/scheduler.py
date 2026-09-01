@@ -152,3 +152,4 @@ class HeuristicPriorityScheduler:
                 time_used += item["estimated_minutes"]
 
         return daily_plan
+        
