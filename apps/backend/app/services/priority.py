@@ -1,6 +1,7 @@
-def calculate_weakness(mastery_score:float) -> float:
-    return (100.0 - mastery_score)/100.0 
-# converting mastery score [0, 100] into weakness [0, 1]
+def calculate_weakness(mastery_score: float) -> float:
+    # Convert mastery score [0, 100] into weakness [0, 1].
+    return (100.0 - mastery_score) / 100.0
+
 
 def calculate_priority(
     weakness: float,
