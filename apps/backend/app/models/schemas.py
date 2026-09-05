@@ -11,6 +11,7 @@ class QuizItem(BaseModel):
     question: str
     options: list[str]
     correct_answer: str
+    last_result: bool | None = None
 
 
 class SessionPlan(BaseModel):
